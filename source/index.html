@@ -2,12 +2,172 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Название проекта</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-32x32.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="/source/fonts/Montserrat/Montserrat-VariableFont_wght.ttf" as="font" type="font/woff2" crossorigin>
+
+
+
+    <title>Drink2Go</title>
   </head>
+
   <body class="page__body">
-    <header class="header">Шапка</header>
+    <header class="header">
+      <div class="header__logo"></div>
+      <nav class="header__nav">
+        <button class="header__button"></button>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">главная</li>
+          <li class="header__menu-item">каталог</li>
+          <li class="header__menu-item">доставка</li>
+          <li class="header__menu-item">о нас</li>
+        </ul>
+        <ul class="header__account-menu-list">
+          <li class="header__account-menu-item">войти</li>
+          <li class="header__account-menu-item">корзина</li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Сайт интернет-магазина кофе</h1>
+
+    <section class="hiro-block">
+      <h2 class="visually-hidden">новинки</h2>
+      <div class="hiro-block__slider slider">
+        <button class="slider__button slider__button--previous"></button>
+        <button class="slider__button slider__button--next"></button>
+          <ul class="slider__list slider__item--first">
+            <li class="slider__item">
+              <div class="slider__img"><img class="img"></div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка</div>
+                <div class="slider__description-title">Декаф Флэт Уайт</div>
+                <div class="slider__description-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price slider__price--old-price">295 &#8381</div>
+                <div class="slider__price slider__price--current-price">225 &#8381</div>
+                <button class="slider__button button">Заказать</button>
+              </div>
+            </li>
+            <li class="slider__item slider__item--second">
+              <div class="slider__img"><img class="img"></div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка</div>
+                <div class="slider__description-title">Лавандовый Латте</div>
+                <div class="slider__description-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price slider__price--old-price">285 &#8381</div>
+                <div class="slider__price slider__price--current-price">265 &#8381</div>
+                <button class="slider__button button">Заказать</button>
+              </div>
+            </li>
+            <li class="slider__item slider__item--third">
+              <div class="slider__img"><img class="img"></div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка</div>
+                <div class="slider__description-title">Тройной Эспрессо</div>
+                <div class="slider__description-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price slider__price--old-price">395 &#8381</div>
+                <div class="slider__price slider__price--current-price">375 &#8381</div>
+                <button class="slider__button button">Заказать</button>
+              </div>
+            </li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="features">
+      <h2 class="features__header">преимущества</h2>
+      <div class="features__title">Главные причины выбрать Drink2Go</div>
+      <ul class="features__list">
+        <li class="features__item feature">
+          <div class="feature__icon"><img class="img"></div>
+          <div class="feature__title">Скорость</div>
+          <div class="feature__description">Готовый напиток всегда под рукой — просто открой банку</div>
+        </li>
+        <li class="features__item feature">
+          <div class="feature__icon"><img class="img"></div>
+          <div class="feature__title">Удобство</div>
+          <div class="feature__description">Легко помещается и в карман, и в маленькую сумочку</div>
+        </li>
+        <li class="features__item feature">
+          <div class="feature__icon"><img class="img"></div>
+          <div class="feature__title">Бодрость</div>
+          <div class="feature__description">Сбалансированная доза кофеина даст мощный заряд энергии</div>
+        </li>
+        <li class="features__item feature">
+          <div class="feature__icon"><img class="img"></div>
+          <div class="feature__title">Экологичность</div>
+          <div class="feature__description">Вся упаковка сделана из перерабатываемых материалов</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="catalog">
+      <h2 class="catalog__header">каталог</h2>
+      <div class="catalog__title">Каталог кофейных напитков</div>
+      <form class="catalog__filter filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter__radio-buttons radio-buttons">
+          <legend>Наличие молока</legend>
+          <ul class="radio-buttons__list">
+            <li class="radio-buttons__item">
+              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="does-not-matter" id="does-not-matter" checked>
+              <label class="radio-button-label" for="does-not-matter">Неважно</label>
+            </li>
+            <li class="radio-buttons__item">
+              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="only-animal" id="only-animal">
+              <label class="radio-button-label" for="only-animal">Только животное</label>
+            </li>
+            <li class="radio-buttons__item">
+              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="only-plant" id="only-plant">
+              <label class="radio-button-label" for="only-plant">Только растительное</label>
+            </li>
+            <li class="radio-buttons__item">
+              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="without-milk" id="without-milk" disabled>
+              <label class="radio-button-label" for="without-milk">Без молока</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="filter__checkboxes checkboxes">
+          <legend>Страна произрастания</legend>
+          <ul class="checkboxes__list">
+            <li class="checkboxes__item">
+              <input class="visually-hidden input-checkbox" type="checkbox" name="Brazil" id="Brazil" checked>
+              <label class="checkbox-label" for="Brazil">Бразилия</label>
+            </li>
+            <li class="checkboxes__item">
+              <input class="visually-hidden input-checkbox" type="checkbox" name="Ethiopia" id="Ethiopia">
+              <label class="checkbox-label" for="Ethiopia">Эфиопия</label>
+            </li>
+            <li class="checkboxes__item">
+              <input class="visually-hidden input-checkbox" type="checkbox" name="Colombia" id="Colombia">
+              <label class="checkbox-label" for="Colombia">Колумбия</label>
+            </li>
+            <li class="checkboxes__item">
+              <input class="visually-hidden input-checkbox" type="checkbox" name="CostaRica" id="CostaRica">
+              <label class="checkbox-label" for="CostaRica">Коста-Рика</label>
+            </li>
+            <li class="checkboxes__item">
+              <input class="visually-hidden input-checkbox" type="checkbox" name="Peru" id="Peru" disabled>
+              <label class="checkbox-label" for="Peru">Перу</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="filter__button filter__button--submit button" type="submit">Применить</button>
+        <button class="filter__button filter__button--reset button" type="reset">Сбросить</button>
+
+
+      </form>
+    </section>
+    </main>
 
     <script src="js/script.js" defer></script>
   </body>
