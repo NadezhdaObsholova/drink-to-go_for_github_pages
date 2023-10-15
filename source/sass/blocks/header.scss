@@ -1,9 +1,15 @@
 .header {
+  display: flex;
+  align-items: center;
+  height: 60px;
   font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 18px;
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  color: $base-black;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: tomato;
+  padding: 0 20px;
 }

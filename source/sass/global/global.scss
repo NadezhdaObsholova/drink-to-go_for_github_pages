@@ -1,1 +1,41 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+.page {
+  height: 100%;
+}
+
+.page__body {
+  margin: 0;
+  min-width: $min-width;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.img {
+  margin: 0;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
