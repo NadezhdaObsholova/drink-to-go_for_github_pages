@@ -1,0 +1,22 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px 44px 20px;
+  background-color: $lightest-grey;
+}
+
+.catalog__header {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: $base-purple-primary;
+  text-transform: uppercase;
+}
+
+.catalog__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}

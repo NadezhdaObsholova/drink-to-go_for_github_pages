@@ -81,7 +81,8 @@
               </div>
             </li>
             <li class="slider__item slider__item--second visually-hidden">
-              <div class="slider__img"><img  height="280" width="280" class="img" src="images/lavender-cofe.png" alt="банка лавандового латте">
+              <div class="slider__img"><img height="280" width="280" class="img" src="images/lavender-cofe.png"
+                  alt="банка лавандового латте">
               </div>
               <div class="slider__description">
                 <div class="slider__description-notice">новинка!</div>
@@ -99,7 +100,8 @@
               </div>
             </li>
             <li class="slider__item slider__item--third visually-hidden">
-              <div class="slider__img"><img  height="280" width="280" class="img" src="images/espresso-cofe.png" alt="банка тройного эспрессо">
+              <div class="slider__img"><img height="280" width="280" class="img" src="images/espresso-cofe.png"
+                  alt="банка тройного эспрессо">
               </div>
               <div class="slider__description">
                 <div class="slider__description-notice">новинка!</div>
@@ -159,63 +161,94 @@
       <h2 class="catalog__header">каталог</h2>
       <div class="catalog__title">Каталог кофейных напитков</div>
       <form class="catalog__filter filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset class="filter__radio-buttons radio-buttons">
-          <legend>Наличие молока</legend>
+
+        <fieldset class="filter__radio-buttons radio-buttons fieldset">
+          <legend class="radio-buttons__legend">Наличие молока</legend>
           <ul class="radio-buttons__list list">
             <li class="radio-buttons__item">
-              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk"
-                value="does-not-matter" id="does-not-matter" checked>
-              <label class="radio-button-label" for="does-not-matter">Неважно</label>
+              <label class="radio-buttons__label">
+                <input class="radio-buttons__input visually-hidden" type="radio" name="presence-of-milk"
+                  value="does-not-matter" id="does-not-matter" checked>
+                <span class="radio-buttons__mark"></span>
+                <span class="radio-buttons__title">Неважно</span>
+              </label>
             </li>
             <li class="radio-buttons__item">
-              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="only-animal"
-                id="only-animal">
-              <label class="radio-button-label" for="only-animal">Только животное</label>
+              <label class="radio-buttons__label">
+                <input class="radio-buttons__input visually-hidden" type="radio" name="presence-of-milk"
+                  value="only-animal" id="only-animal">
+                <span class="radio-buttons__mark"></span>
+                <span class="radio-buttons__title">Только животное</span>
+              </label>
             </li>
             <li class="radio-buttons__item">
-              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk" value="only-plant"
-                id="only-plant">
-              <label class="radio-button-label" for="only-plant">Только растительное</label>
+              <label class="radio-buttons__label">
+                <input class="radio-buttons__input visually-hidden" type="radio" name="presence-of-milk"
+                  value="only-plant" id="only-plant">
+                <span class="radio-buttons__mark"></span>
+                <span class="radio-buttons__title">Только растительное</span>
+              </label>
             </li>
             <li class="radio-buttons__item">
-              <input class="visually-hidden input-radio-button" type="radio" name="presence-of-milk"
-                value="without-milk" id="without-milk" disabled>
-              <label class="radio-button-label" for="without-milk">Без молока</label>
+              <label class="radio-buttons__label">
+                <input class="radio-buttons__input visually-hidden" type="radio" name="presence-of-milk"
+                  value="without-milk" id="without-milk" disabled>
+                <span class="radio-buttons__mark"></span>
+                <span class="radio-buttons__title">Без молока</span>
+              </label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="filter__checkboxes checkboxes">
-          <legend>Страна произрастания</legend>
+        
+        <fieldset class="filter__checkboxes checkboxes fieldset">
+          <legend class="checkboxes__legend">Страна произрастания</legend>
           <ul class="checkboxes__list list">
             <li class="checkboxes__item">
-              <input class="visually-hidden input-checkbox" type="checkbox" name="Brazil" id="Brazil" checked>
-              <label class="checkbox-label" for="Brazil">Бразилия</label>
+              <label class="checkboxes__label">
+                <input class="checkboxes__input visually-hidden" type="checkbox" name="Brazil" id="Brazil" checked>
+                <span class="checkboxes__mark"></span>
+                <span class="checkboxes__title">Бразилия</span>
+              </label>
             </li>
             <li class="checkboxes__item">
-              <input class="visually-hidden input-checkbox" type="checkbox" name="Ethiopia" id="Ethiopia">
-              <label class="checkbox-label" for="Ethiopia">Эфиопия</label>
+              <label class="checkboxes__label">
+                <input class="checkboxes__input visually-hidden" type="checkbox" name="Ethiopia" id="Ethiopia">
+                <span class="checkboxes__mark"></span>
+                <span class="checkboxes__title">Эфиопия</span>
+              </label>
             </li>
             <li class="checkboxes__item">
-              <input class="visually-hidden input-checkbox" type="checkbox" name="Colombia" id="Colombia">
-              <label class="checkbox-label" for="Colombia">Колумбия</label>
+              <label class="checkboxes__label">
+                <input class="checkboxes__input visually-hidden" type="checkbox" name="Colombia" id="Colombia">
+                <span class="checkboxes__mark"></span>
+                <span class="checkboxes__title">Колумбия</span>
+              </label>
             </li>
             <li class="checkboxes__item">
-              <input class="visually-hidden input-checkbox" type="checkbox" name="CostaRica" id="CostaRica">
-              <label class="checkbox-label" for="CostaRica">Коста-Рика</label>
+              <label class="checkboxes__label">
+                <input class="checkboxes__input visually-hidden" type="checkbox" name="CostaRica" id="CostaRica">
+                <span class="checkboxes__mark"></span>
+                <span class="checkboxes__title">Коста-Рика</span>
+              </label>
             </li>
             <li class="checkboxes__item">
-              <input class="visually-hidden input-checkbox" type="checkbox" name="Peru" id="Peru" disabled>
-              <label class="checkbox-label" for="Peru">Перу</label>
+              <label class="checkboxes__label">
+                <input class="checkboxes__input visually-hidden" type="checkbox" name="Peru" id="Peru" disabled>
+                <span class="checkboxes__mark"></span>
+                <span class="checkboxes__title">Перу</span>
+              </label>
             </li>
           </ul>
         </fieldset>
         <button class="filter__button filter__button--submit button" type="submit">Применить</button>
         <button class="filter__button filter__button--reset button" type="reset">Сбросить</button>
       </form>
+
       <div class="catalog__products products">
-        <select class="products__select">
-          <option>по умолчанию</option>
-          <option>по цене</option>
+        <div class="products__select-title">Сортировка</div>
+        <select class="products__select-list">
+          <option class="products__select-item">по умолчанию</option>
+          <option class="products__select-item">по цене</option>
         </select>
         <ul class="products__list list">
           <li class="products__item product">
