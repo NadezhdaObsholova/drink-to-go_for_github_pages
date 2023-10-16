@@ -33,6 +33,7 @@
   color: $base-purple-primary;
   padding-top: 10px;
   padding-bottom: 4px;
+  text-transform: uppercase;
 }
 
 .slider__description-title {
@@ -86,4 +87,12 @@
 
 .slider__item--first {
   background-color: $flat-white;
+}
+
+.slider__item--second {
+  background-color: $lavender-latte;
+}
+
+.slider__item--third {
+  background-color: $espresso;
 }
