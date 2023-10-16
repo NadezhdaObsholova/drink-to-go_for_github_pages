@@ -16,72 +16,107 @@
 <body class="page__body">
   <header class="header">
     <a class="header__logo logo link" href="#"></a>
-    <nav class="header__nav nav nav--header">
-      <ul class="nav__list list visually-hidden">
-        <li class="nav__item">главная</li>
-        <li class="nav__item">каталог</li>
-        <li class="nav__item">доставка</li>
-        <li class="nav__item">о нас</li>
+    <nav class="header__nav nav-header visually-hidden">
+      <ul class="nav-header__list list">
+        <li class="nav-header__item">главная</li>
+        <li class="nav-header__item">каталог</li>
+        <li class="nav-header__item">доставка</li>
+        <li class="nav-header__item">о нас</li>
       </ul>
     </nav>
-    <ul class="header__account-menu-list list">
-      <li class="header__account-menu-item">войти</li>
-      <li class="header__account-menu-item">корзина</li>
-    </ul>
-    <button class="nav__button"></button>
+    <nav class="header__account account-menu">
+      <ul class="account-menu-list list">
+        <li class="account-menu-item">
+          <img width="16" height="16" class="account-menu__icon img" src="images/user.svg" alt="">
+          <p class="account-menu__text visually-hidden">войти</p>
+        </li>
+        <li class="account-menu-item">
+          <img width="16" height="16" class="account-menu__icon img" src="images/basket.svg" alt="">
+          <p class="account-menu__text visually-hidden">корзина</p>
+        </li>
+      </ul>
+    </nav>
+    <button class="header__menu-button button">
+      <img width="16" height="12" class="img" src="images/mobile-menu-button.svg" alt="кнопка открытия меню">
+    </button>
   </header>
 
   <main class="main-container">
     <h1 class="visually-hidden">Сайт интернет-магазина кофе</h1>
-    <section class="main-container__hiro-block hiro-block">
+    <section class="main-container__hiro-block">
       <h2 class="visually-hidden">новинки</h2>
-      <div class="hiro-block__slider slider">
-        <button class="slider__button slider__button--previous"></button>
-        <button class="slider__button slider__button--next"></button>
-        <ul class="slider__list list">
-          <li class="slider__item slider__item--first">
-            <div class="slider__img"><img class="img" src="url" alt=""></div>
-            <div class="slider__description">
-              <div class="slider__description-notice">новинка</div>
-              <div class="slider__description-title">Декаф Флэт Уайт</div>
-              <div class="slider__description-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским
-                молоком — то, что нужно для расслабления после тяжёлого рабочего дня</div>
-            </div>
-            <div class="slider__order">
-              <div class="slider__price slider__price--old-price">295 &#8381;</div>
-              <div class="slider__price slider__price--current-price">225 &#8381;</div>
-              <button class="slider__button button">Заказать</button>
-            </div>
-          </li>
-          <li class="slider__item slider__item--second">
-            <div class="slider__img"><img class="img" src="url" alt=""></div>
-            <div class="slider__description">
-              <div class="slider__description-notice">новинка</div>
-              <div class="slider__description-title">Лавандовый Латте</div>
-              <div class="slider__description-text">Невероятное сочетание перуанской высокогорной арабики с молоком ламы
-                и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</div>
-            </div>
-            <div class="slider__order">
-              <div class="slider__price slider__price--old-price">285 &#8381;</div>
-              <div class="slider__price slider__price--current-price">265 &#8381;</div>
-              <button class="slider__button button">Заказать</button>
-            </div>
-          </li>
-          <li class="slider__item slider__item--third">
-            <div class="slider__img"><img class="img" src="url" alt=""></div>
-            <div class="slider__description">
-              <div class="slider__description-notice">новинка</div>
-              <div class="slider__description-title">Тройной Эспрессо</div>
-              <div class="slider__description-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
-                эспрессо из Колумбии покажет вам, что такое настоящая бодрость</div>
-            </div>
-            <div class="slider__order">
-              <div class="slider__price slider__price--old-price">395 &#8381;</div>
-              <div class="slider__price slider__price--current-price">375 &#8381;</div>
-              <button class="slider__button button">Заказать</button>
-            </div>
-          </li>
-        </ul>
+      <div class="main-container__slider slider">
+        <button class="slider__button slider__button--previous button" aria-label="показать предыдущий слайд">
+          <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF" />
+          </svg>
+        </button>
+        <button class="slider__button slider__button--next button" aria-label="показать следующий слайд">
+          <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF" />
+          </svg>
+        </button>
+        <div class="slider__holder">
+          <ul class="slider__list list">
+            <li class="slider__item slider__item--first">
+              <div class="slider__img">
+                <img height="280" width="280" class="img" src="images/flat-white-cofe.png"
+                  alt="банка кофе Декаф Флэт Уайт">
+              </div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка!</div>
+                <div class="slider__description-title">Декаф Флэт Уайт</div>
+                <div class="slider__description-text">Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                  фермерским
+                  молоком — то, что нужно для расслабления после тяжёлого рабочего дня</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price">
+                  <div class="slider__old-price">295 &#8381;</div>
+                  <div class="slider__current-price">225 &#8381;</div>
+                </div>
+                <button class="slider__order-button button">Заказать</button>
+              </div>
+            </li>
+            <li class="slider__item slider__item--second visually-hidden">
+              <div class="slider__img"><img class="img" src="images/lavender-cofe.png" alt="банка лавандового латте">
+              </div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка!</div>
+                <div class="slider__description-title">Лавандовый Латте</div>
+                <div class="slider__description-text">Невероятное сочетание перуанской высокогорной арабики с молоком
+                  ламы
+                  и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price">
+                  <div class="slider__old-price">285 &#8381;</div>
+                  <div class="slider__current-price">265 &#8381;</div>
+                </div>
+                <button class="slider__order-button button">Заказать</button>
+              </div>
+            </li>
+            <li class="slider__item slider__item--third visually-hidden">
+              <div class="slider__img"><img class="img" src="images/espresso-cofe.png" alt="банка тройного эспрессо">
+              </div>
+              <div class="slider__description">
+                <div class="slider__description-notice">новинка!</div>
+                <div class="slider__description-title">Тройной Эспрессо</div>
+                <div class="slider__description-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
+                  эспрессо из Колумбии покажет вам, что такое настоящая бодрость</div>
+              </div>
+              <div class="slider__order">
+                <div class="slider__price">
+                  <div class="slider__old-price">395 &#8381;</div>
+                  <div class="slider__current-price">375 &#8381;</div>
+                </div>
+                <button class="slider__order-button button">Заказать</button>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -238,43 +273,47 @@
       <div class="footer__sotial sotial">
         <ul class="sotial__list list">
           <li class="sotial__item">
-            <a class="link vk" href="https://vk.com"><img class="img vk-icon" aria-label="наша страница в вконтакте" src="url" alt=""></a>
+            <a class="link vk" href="https://vk.com"><img class="img vk-icon" aria-label="наша страница в вконтакте"
+                src="url" alt=""></a>
           </li>
           <li class="sotial__item">
-            <a class="link vk" href="https://ru.pinterest.com/"><img class="img pinterest-icon" aria-label="наша страница в pinterest" src="url" alt=""></a>
+            <a class="link vk" href="https://ru.pinterest.com/"><img class="img pinterest-icon"
+                aria-label="наша страница в pinterest" src="url" alt=""></a>
           </li>
           <li class="sotial__item">
-            <a class="link vk" href="https://ok.ru/"><img class="img ok-icon" aria-label="наша страница в одноклассники" src="url" alt=""></a>
+            <a class="link vk" href="https://ok.ru/"><img class="img ok-icon" aria-label="наша страница в одноклассники"
+                src="url" alt=""></a>
           </li>
         </ul>
       </div>
       <div class="footer__nav">
-        <nav class="footer__nav nav nav--footer">
+        <nav class="footer__nav">
           <h3 class="footer__nav-title">Интернет-магазин</h3>
-          <ul class="nav__list list">
-            <li class="nav__item">главная</li>
-            <li class="nav__item">каталог</li>
-            <li class="nav__item">доставка</li>
-            <li class="nav__item">о нас</li>
+          <ul class="footer__nav-list list">
+            <li class="footer__nav-item">главная</li>
+            <li class="footer__nav-item">каталог</li>
+            <li class="footer__nav-item">доставка</li>
+            <li class="footer__nav-item">о нас</li>
           </ul>
         </nav>
-        <nav class="footer__nav nav">
+        <nav class="footer__nav">
           <h3 class="footer__nav-title">Медиа</h3>
-          <ul class="nav__list list">
-            <li class="nav__item">блог</li>
-            <li class="nav__item">информация для сми</li>
-            <li class="nav__item">правовая информация</li>
+          <ul class="footer__nav-list list">
+            <li class="footer__nav-item">блог</li>
+            <li class="footer__nav-item">информация для сми</li>
+            <li class="footer__nav-item">правовая информация</li>
           </ul>
         </nav>
-        <nav class="footer__nav nav">
+        <nav class="footer__nav">
           <h3 class="footer__nav-title">Контакты</h3>
-          <ul class="nav__list list">
-            <li class="nav__item">Санкт-Петербург, набережная реки Карповки, дом 5</li>
-            <li class="nav__item"><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
+          <ul class="footer__nav-list list">
+            <li class="footer__nav-item">Санкт-Петербург, набережная реки Карповки, дом 5</li>
+            <li class="footer__nav-item"><a href="tel:+79999999999">+7 (999) 999-99-99</a></li>
           </ul>
         </nav>
       </div>
-      <div class="footer__copyright"><a class="link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML Academy</a></div>
+      <div class="footer__copyright"><a class="link" href="https://htmlacademy.ru/intensive/adaptive">Разработано в HTML
+          Academy</a></div>
     </div>
 
   </footer>

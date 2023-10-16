@@ -3,6 +3,7 @@
   position: relative;
   width: 32px;
   height: 36px;
+  margin: 20px;
 }
 
 .logo::after {
@@ -11,6 +12,5 @@
   display: block;
   width: 32px;
   height: 36px;
-  background-color: antiquewhite;
-  background-image: url("../img/icons/logo-mobile.svg");
+  background-image: url("../../images/icons/stack.svg#logo-mobile");
 }

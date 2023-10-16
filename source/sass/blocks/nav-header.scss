@@ -1,0 +1,19 @@
+.nav-header {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: $base-white;
+  margin: 0;
+}
+
+.nav-header__list {
+  margin: 0;
+}
+
+.nav-header__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  border-bottom: solid 1px $base-purple-secondary;
+}
