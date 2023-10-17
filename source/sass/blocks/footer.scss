@@ -1,0 +1,23 @@
+.footer {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer__map {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__sotial-links {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 37px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav-links {
+  display: flex;
+  flex-direction: row;
+}

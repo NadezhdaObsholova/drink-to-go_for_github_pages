@@ -16,11 +16,10 @@
 .filter__button--submit {
   background-color: $base-purple-primary;
   color: $base-white;
-  margin-bottom: 10px;
 }
 
 .filter__button--reset {
   background-color: $base-white;
   color: $base-purple-primary;
-  margin-top: 10px;
+  margin-top: -10px;
 }

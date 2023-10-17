@@ -1,0 +1,37 @@
+.sotial__list {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.sotial__item {
+  border-radius: 4px;
+}
+
+.sotial__link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.sotial__item:hover {
+  background-color: $base-purple-secondary;
+}
+
+.sotial__item:active {
+  background-color: $base-purple-opacity-25;
+}
+
+.sotial__icon {
+  fill: $base-grey;
+}
+
+.sotial__item:hover .sotial__icon {
+  fill: $base-purple-primary;
+}
+
+.sotial__item:active .sotial__icon {
+  fill: $base-purple-primary;
+}
