@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/favicon-32x32.png">
@@ -179,6 +180,13 @@
 
           <fieldset class="filter__price-slider price-slider fieldset">
             <legend class="price-slider__legend">Цена</legend>
+              <div class="price-slider__holder" id="slider"></div>
+              <p class="price-slider__field">
+                <input class="price-slider__value-min" type="text">
+                <input class="price-slider__value-max" type="text">
+
+              </p>
+
           </fieldset>
 
           <fieldset class="filter__radio-buttons radio-buttons fieldset">
@@ -501,8 +509,8 @@
     </div>
   </footer>
 
-  <script src="vendor/nouislider/nouislider.js" defer></script>
-  <script src="js/script.js" defer type="module"></script>
+  <script src="vendor/nouislider/nouislider.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 
