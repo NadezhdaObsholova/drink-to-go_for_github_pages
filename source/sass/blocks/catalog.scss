@@ -2,8 +2,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 20px 44px 20px;
+  padding-top: 50px;
+  padding-bottom: 44px;
   background-color: $lightest-grey;
+}
+
+.catalog__content-holder {
+  width: 280px;
 }
 
 .catalog__header {
@@ -19,6 +24,7 @@
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .catalog__list {

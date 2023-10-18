@@ -1,7 +1,4 @@
 .header {
-  display: flex;
-  align-items: center;
-  height: 60px;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -12,9 +9,18 @@
   padding: 0;
 }
 
+.header__content-holder {
+  display: flex;
+  gap: 44px;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  height: 60px;
+  margin: auto;
+}
+
 .header__menu-button {
   cursor: pointer;
   padding: 0;
   background-color: transparent;
-  margin: 22px;
 }

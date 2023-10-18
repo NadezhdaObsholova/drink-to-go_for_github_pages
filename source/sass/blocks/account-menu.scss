@@ -1,18 +1,9 @@
 .account-menu {
-  display: flex;
-  flex-direction: row-reverse;
   flex-grow: 1;
 }
 
 .account-menu-list {
   display: flex;
-}
-
-.account-menu-item {
-  display: flex;
-  align-items: center;
-}
-
-.account-menu__icon {
-  margin: 22px;
+  gap: 44px;
+  justify-content: end;
 }

@@ -1,0 +1,12 @@
+.map {
+  position: relative;
+  overflow: hidden;
+  height: 480px;
+}
+
+.map__holder {
+  position: absolute;
+  right: calc(50% - 384px);
+  display: block;
+  justify-content: center;
+}
