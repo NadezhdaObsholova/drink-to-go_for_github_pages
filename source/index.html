@@ -88,13 +88,13 @@
                       class="tablet-visible">с натуральным
                     фермерским молоком — то, что нужно<br class="tablet-visible">для расслабления после тяжёлого
                     рабочего дня</div>
-                    <div class="slider__order">
-                      <div class="slider__price">
-                        <div class="slider__old-price">295 &#8381;</div>
-                        <div class="slider__current-price">225 &#8381;</div>
-                      </div>
-                      <button class="slider__order-button button">Заказать</button>
+                  <div class="slider__order">
+                    <div class="slider__price">
+                      <div class="slider__old-price">295 &#8381;</div>
+                      <div class="slider__current-price">225 &#8381;</div>
                     </div>
+                    <button class="slider__order-button button">Заказать</button>
+                  </div>
                 </div>
 
               </div>
@@ -172,29 +172,37 @@
             <div class="feature__icon">
               <img width="50" height="56" class="img" src="images/icons/stack.svg#clock-icon" alt="">
             </div>
-            <div class="feature__title">Скорость</div>
-            <div class="feature__description">Готовый напиток всегда под рукой — просто открой банку</div>
+            <div class="feature__description">
+              <div class="feature__title">Скорость</div>
+              <div class="feature__text">Готовый напиток всегда под рукой — просто открой банку</div>
+            </div>
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
               <img width="52" height="56" class="img" src="images/icons/stack.svg#pocket-icon" alt="">
             </div>
-            <div class="feature__title">Удобство</div>
-            <div class="feature__description">Легко помещается и в карман,<br>и в маленькую сумочку</div>
+            <div class="feature__description">
+              <div class="feature__title">Удобство</div>
+              <div class="feature__text">Легко помещается и в карман,<br>и в маленькую сумочку</div>
+            </div>
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
               <img width="42" height="56" class="img" src="images/icons/stack.svg#flash-icon" alt="">
             </div>
-            <div class="feature__title">Бодрость</div>
-            <div class="feature__description">Сбалансированная доза кофеина даст мощный заряд энергии</div>
+            <div class="feature__description">
+              <div class="feature__title">Бодрость</div>
+              <div class="feature__text">Сбалансированная доза кофеина даст мощный заряд энергии</div>
+            </div>
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
               <img width="46" height="56" class="img" src="images/icons/stack.svg#leaf-icon" alt="">
             </div>
-            <div class="feature__title">Экологичность</div>
-            <div class="feature__description">Вся упаковка сделана<br>из перерабатываемых материалов</div>
+            <div class="feature__description">
+              <div class="feature__title">Экологичность</div>
+              <div class="feature__text">Вся упаковка сделана<br>из перерабатываемых материалов</div>
+            </div>
           </li>
         </ul>
       </div>
@@ -294,8 +302,10 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter__button filter__button--submit button" type="submit">Применить</button>
-          <button class="filter__button filter__button--reset button" type="reset">Сбросить</button>
+          <div class="filter__buttons">
+            <button class="filter__button filter__button--submit button" type="submit">Применить</button>
+            <button class="filter__button filter__button--reset button" type="reset">Сбросить</button>
+          </div>
         </form>
 
         <div class="catalog__products">
@@ -455,7 +465,9 @@
       <h2 class="visually-hidden">Расположение магазина на карте</h2>
       <div class="map__holder">
         <picture>
-          <img class="map-img" height="480" srcset="images/map_tablet.webp, images/map_tablet@2x.webp 2x"
+           <source media="(min-width: 768px)"
+            srcset="images/map_desktop.webp, images/map_map_desktop@2x.webp 2x">
+            <img class="map-img" srcset="images/map_tablet.webp, images/map_tablet@2x.webp 2x"
             src="images/map_tablet.png" alt="карта местности">
         </picture>
       </div>

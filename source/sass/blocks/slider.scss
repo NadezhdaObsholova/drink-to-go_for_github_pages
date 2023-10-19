@@ -113,15 +113,29 @@
       $flat-white 70%,
       $base-white 70%,
     );
-   }
+  }
 }
 
 .slider__item--second {
   background-color: $lavender-latte;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      to bottom,
+      $lavender-latte 70%,
+      $base-white 70%,
+    );
+  }
 }
 
 .slider__item--third {
   background-color: $espresso;
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      to bottom,
+      $espresso 70%,
+      $base-white 70%,
+    );
+  }
 }
 
 
@@ -130,4 +144,4 @@
     display: flex;
     justify-content: center;
   }
-  }
+}

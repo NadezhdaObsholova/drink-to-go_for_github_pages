@@ -9,4 +9,8 @@
   right: calc(50% - 384px);
   display: block;
   justify-content: center;
+  @media (min-width: $tablet-width) {
+    right: calc(50% - 720px);
+    top: -30px;
+  }
 }

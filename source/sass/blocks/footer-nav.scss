@@ -47,6 +47,9 @@
 
 .footer-nav {
   border-bottom: 1px solid $base-purple-secondary;
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .footer-nav__list {

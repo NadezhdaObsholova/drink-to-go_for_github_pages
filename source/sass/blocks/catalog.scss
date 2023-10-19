@@ -5,10 +5,16 @@
   padding-top: 50px;
   padding-bottom: 44px;
   background-color: $lightest-grey;
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+  }
 }
 
 .catalog__content-holder {
   width: 280px;
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 }
 
 .catalog__header {
@@ -25,6 +31,11 @@
   line-height: 36px;
   text-align: center;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .catalog__list {
@@ -32,4 +43,13 @@
   flex-direction: column;
   gap: 20px;
   padding-bottom: 40px;
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+.catalog__pagination {
+  margin-left: auto;
 }
