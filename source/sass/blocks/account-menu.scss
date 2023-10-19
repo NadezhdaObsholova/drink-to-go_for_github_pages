@@ -3,3 +3,18 @@
   gap: 44px;
   justify-content: end;
 }
+
+.account-menu__text {
+  display: none;
+  @media (min-width: $desktop-width) {
+  display: flex;
+  }
+}
+
+.account-menu-item   {
+  @media (min-width: $desktop-width) {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  }
+}

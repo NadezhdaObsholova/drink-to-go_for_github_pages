@@ -8,10 +8,17 @@
   background-color: transparent;
   width: 20px;
   height: 100%;
+  padding: 0;
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
 }
 
 .slider__button-next {
   left: calc(100% - 20px);
+  @media (min-width: $tablet-width) {
+    left: calc(100% - 80px);
+  }
 }
 
 .slider__item {
@@ -28,12 +35,22 @@
     display: flex;
     flex-direction: column-reverse;
   }
+  @media (min-width: $desktop-width) {
+    width: 1280px;
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .slider__description {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    align-items: start;
+    justify-content: center;
+  }
 }
 
 .slider__description-notice {
@@ -66,6 +83,10 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+  text-align: left;
   }
 }
 
@@ -114,6 +135,13 @@
       $base-white 70%,
     );
   }
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(
+      to bottom,
+      $flat-white 100%,
+      $base-white 100%,
+    );
+  }
 }
 
 .slider__item--second {
@@ -138,10 +166,65 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .slider__img {
     display: flex;
     justify-content: center;
   }
+}
+
+.slider__pagination-list {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    gap: 8px;
+    position: absolute;
+    top: calc(100% - 70px);
+    left: calc(50% - 101px);
+  }
+}
+
+.slider__padination-item {
+  width: 62px;
+  height: 4px;
+  background-color: $base-white;
+}
+.slider__padination-item--current {
+  background-color: $base-purple-primary;
+}
+
+.slider__button-prev:hover {
+  background: linear-gradient(90deg, #FFF 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.slider__button-next:hover {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, #FFF 100%,);
+}
+
+.slider__button-prev:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+}
+.slider__button-next:active {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+}
+
+.slider__order-button:hover,
+.slider__order-button:focus {
+  background-color: $base-purple-lighter;
+}
+
+.slider__order-button:active {
+  background-color: $base-purple-darker;
+}
+
+.slider__order-button:disabled {
+  background-color: $base-grey;
+}
+
+.slider__button--path {
+  fill: $base-purple-primary;
+}
+
+.slider__button-prev:disabled .slider__button--path,
+.slider__button-next:disabled .slider__button--path {
+  fill: $base-grey;
 }

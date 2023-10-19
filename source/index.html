@@ -18,9 +18,10 @@
   <header class="header" data-test="header">
     <div class="header__content-holder">
       <a class="header__logo logo link" href="#"></a>
+      <div class="logo__desktop-title">Интернет-магазин кофейных напитков</div>
       <nav class="header__nav nav-header">
         <ul class="nav-header__list list">
-          <li class="nav-header__item">главная</li>
+          <li class="nav-header__item nav-header__item--current">главная</li>
           <li class="nav-header__item">каталог</li>
           <li class="nav-header__item">доставка</li>
           <li class="nav-header__item">о нас</li>
@@ -30,11 +31,11 @@
         <ul class="account-menu-list list">
           <li class="account-menu-item">
             <img width="16" height="16" class="account-menu__icon img" src="images/user.svg" alt="">
-            <p class="account-menu__text visually-hidden">войти</p>
+            <p class="account-menu__text">войти</p>
           </li>
           <li class="account-menu-item">
             <img width="16" height="16" class="account-menu__icon img" src="images/basket.svg" alt="">
-            <p class="account-menu__text visually-hidden">корзина</p>
+            <p class="account-menu__text">корзина</p>
           </li>
         </ul>
       </div>
@@ -49,18 +50,18 @@
       <div class="main__slider slider">
         <button class="slider__button-prev slider-button-prev button" aria-label="показать предыдущий слайд">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF" />
+            <path class="slider__button--path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="none" />
           </svg>
         </button>
         <button class="slider__button-next slider-button-next button" aria-label="показать следующий слайд">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF" />
+            <path class="slider__button--path" fill-rule="evenodd" clip-rule="evenodd"
+              d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="none" />
           </svg>
         </button>
-        <ul class="slider__pagination-list slider-pagination visually-hidden">
-          <li class="slider__padination-item slider__padination-item--fisrt"></li>
+        <ul class="slider__pagination-list list">
+          <li class="slider__padination-item slider__padination-item--fisrt slider__padination-item--current"></li>
           <li class="slider__padination-item slider__padination-item--second"></li>
           <li class="slider__padination-item slider__padination-item--third"></li>
         </ul>
@@ -465,10 +466,9 @@
       <h2 class="visually-hidden">Расположение магазина на карте</h2>
       <div class="map__holder">
         <picture>
-           <source media="(min-width: 768px)"
-            srcset="images/map_desktop.webp, images/map_map_desktop@2x.webp 2x">
-            <img class="map-img" srcset="images/map_tablet.webp, images/map_tablet@2x.webp 2x"
-            src="images/map_tablet.png" alt="карта местности">
+          <source media="(min-width: 768px)" srcset="images/map_desktop.webp, images/map_map_desktop@2x.webp 2x">
+          <img class="map-img" srcset="images/map_tablet.webp, images/map_tablet@2x.webp 2x" src="images/map_tablet.png"
+            alt="карта местности">
         </picture>
       </div>
     </section>
@@ -476,9 +476,8 @@
   <footer class="footer" data-test="footer">
     <div class="footer__content-holder">
       <div class="footer__sotial-links">
-        <a class="footer__logo  link">
-          <img class="img" src="images/footer-logo.svg" alt="">
-        </a>
+        <a class="footer__logo link"></a>
+        <div class="footer__logo-desktop-title">Интернет-магазин кофейных напитков</div>
         <div class="footer__sotial sotial">
           <ul class="sotial__list list">
             <li class="sotial__item">
@@ -538,14 +537,16 @@
           </ul>
         </nav>
       </div>
-      <a class="footer__copyright link" href="https://htmlacademy.ru/intensive/adaptive">
-        <p>Разработано в HTMLAcademy</p>
-        <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z"
-            fill="#BDBDBD" />
-        </svg>
-      </a>
+      <div class="footer__copyright">
+        <a class="footer__copyright-text link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p>Разработано в HTMLAcademy</p>
+          <svg width="12" height="16" viewBox="0 0 12 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path class="footer__copyright-icon"
+              d="M11.2151 5.75392L5.97184 2.49957V2.49875L5.97121 2.49916L5.97058 2.49875V2.49957L0.784854 5.75013V1.40658L6.00008 0.830884L11.2151 1.40658V5.75392ZM11.211 6.32987L9.12557 7.62344L5.98451 5.65607L5.97935 6.22863L8.66414 7.9096L8.20107 8.19683L5.98451 6.80853L5.97935 7.3811L7.72892 8.47648L7.31607 8.76717L7.30606 8.77351L5.98451 7.95383L5.97935 8.52631L6.8465 9.06404L5.96315 9.62244L0.796198 6.3886L5.97058 3.1139V3.11448L11.211 6.32987ZM11.2151 11.7713L6 15.0384L0.784854 11.7713V7.02542L5.97763 10.2796L5.98631 10.8693L2.42396 8.63702L2.41871 9.20959L5.99523 11.4728L6.00407 12.0782L2.42873 9.83883L2.42356 10.4113L6 12.6745L9.60624 10.4026V7.95712L11.2151 6.94552V11.7713ZM5.99984 -3.17891e-07L0 0.662267V12.2411L6 16L12 12.2411V0.662267L5.99984 -3.17891e-07Z"
+              fill="none" />
+          </svg>
+        </a>
+      </div>
     </div>
   </footer>
 

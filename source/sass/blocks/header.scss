@@ -26,6 +26,11 @@
     width: 708px;
     height: 80px;
   }
+  @media (min-width: $desktop-width) {
+    width: 1360px;
+    height: 80px;
+    gap: 20px;
+  }
 }
 
 .header__account {

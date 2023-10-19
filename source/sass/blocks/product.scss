@@ -47,3 +47,16 @@
   font-weight: 600;
   color: $base-black;
 }
+
+.product__button:hover,
+.product__button:focus {
+  background-color: $base-purple-lighter;
+}
+
+.product__button:active {
+  background-color: $base-purple-darker;
+}
+
+.product__button:disabled {
+  background-color: $base-grey;
+}
