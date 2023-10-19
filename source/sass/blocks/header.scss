@@ -7,6 +7,10 @@
   text-align: center;
   background-color: $base-white;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .header__content-holder {
@@ -17,15 +21,75 @@
   width: 280px;
   height: 60px;
   margin: auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 80px;
+  }
+}
+
+.header__account {
+  flex-grow: 1;
+  @media (min-width: $tablet-width) {
+    flex-grow: 0;
+  }
 }
 
 .header__menu-button {
   cursor: pointer;
   padding: 0;
   background-color: transparent;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
 }
 
 .header__menu-button--close {
   margin-right: 2px;
   margin-left: 2px;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__menu-button {
+  position: relative;
+  display: block;
+  align-items: center;
+  padding: 0;
+  width: 16px;
+  height: 12px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: -2px;
+}
+
+.header__menu-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 16px;
+  height: 12px;
+  top: calc(-50% + 8px);
+  background-image: url('../../images/icons/stack.svg#mobile-menu-button-close');
+}
+
+.js-toggle-button {
+  height: 16px;
+  margin-right: 0;
+  margin-left: 0;
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.js-toggle-button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 16px;
+  top: calc(-50% + 8px);
+  background-image: url('../../images/icons/stack.svg#mobile-menu-button-open');
 }

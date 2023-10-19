@@ -60,3 +60,10 @@
   margin: 0;
   padding: 0;
 }
+
+.tablet-visible {
+  display: none;
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}

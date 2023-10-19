@@ -23,21 +23,16 @@ sliderElement.noUiSlider.on('update', () => {
 });
 
 //burger-menu
-const menuButtonOpenElement = document.querySelector('.header__menu-button--open');
-
-const menuButtonCloseElement = document.querySelector('.header__menu-button--close');
-
-const headerNavElement = document.querySelector('.header__nav');
+const menuButtonElement = document.querySelector('.header__menu-button');
+const headerNavElement = document.querySelector('.nav-header');
 
 
 const onClickMenuButtonElement = () => {
-  headerNavElement.classList.toggle('visually-hidden');
-  menuButtonOpenElement.classList.toggle('visually-hidden');
-  menuButtonCloseElement.classList.toggle('visually-hidden');
+  headerNavElement.classList.toggle('nav-header--js');
+  menuButtonElement.classList.toggle('js-toggle-button');
 };
 
-menuButtonOpenElement.addEventListener('click', onClickMenuButtonElement);
-menuButtonCloseElement.addEventListener('click', onClickMenuButtonElement);
+menuButtonElement.addEventListener('click', onClickMenuButtonElement);
 
 
 
