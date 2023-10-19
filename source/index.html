@@ -38,8 +38,11 @@
           </li>
         </ul>
       </div>
-      <button class="header__menu-button button">
-        <img width="16" height="12" class="img" src="images/mobile-menu-button.svg" alt="кнопка открытия меню">
+      <button class="header__menu-button header__menu-button--open button">
+        <img width="16" height="12" class="img" src="images/mobile-menu-button-open.svg" alt="кнопка открытия меню">
+      </button>
+      <button class="header__menu-button header__menu-button--close button  visually-hidden">
+        <img width="12" height="12" class="img" src="images/mobile-menu-button-close.svg" alt="кнопка закрытия меню">
       </button>
     </div>
   </header>
@@ -181,11 +184,11 @@
           <fieldset class="filter__price-slider price-slider fieldset">
             <legend class="price-slider__legend">Цена</legend>
               <div class="price-slider__holder" id="slider"></div>
-              <p class="price-slider__field">
+              <div class="price-slider__field">
                 <input class="price-slider__value-min" type="text">
+                <div class="price-slider__separaitor"></div>
                 <input class="price-slider__value-max" type="text">
-
-              </p>
+              </div>
 
           </fieldset>
 

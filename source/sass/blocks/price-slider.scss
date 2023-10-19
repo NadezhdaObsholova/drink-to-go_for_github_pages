@@ -3,3 +3,36 @@
   font-weight: 600;
   line-height: 24px;
 }
+
+.price-slider__holder {
+  margin-top: 30px;
+  margin-bottom: 34px;
+}
+
+.price-slider__field {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.price-slider__value-min,
+.price-slider__value-max {
+  width: 118px;
+  height: 40px;
+  text-align: center;
+  color: $base-black;
+  font-family: inherit;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 2px solid $base-purple-lighter;
+
+}
+
+.price-slider__separaitor {
+  height: 2px;
+  width: 8px;
+  background-color: $base-grey;
+}
