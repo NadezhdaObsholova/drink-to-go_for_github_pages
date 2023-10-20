@@ -38,12 +38,10 @@ menuButtonElement.addEventListener('click', onClickMenuButtonElement);
 
 
 //slider
-/*
+
 const buttonPrevElement = document.querySelector('.slider__button-prev');
 const buttonNextElement = document.querySelector('.slider__button-next');
-const slides = document.querySelectorAll('.slider__item');
-
-console.log(buttonPrevElement);
-console.log(buttonNextElement);
-console.log(slides);
-*/
+const slidesElements = Array.from(document.querySelectorAll('.slider__item'));
+const sliderPagination = Array.from(document.querySelectorAll('.slider__padination-item'));
+const slideCount = slidesElements.length;
+let currentSlide = 0;

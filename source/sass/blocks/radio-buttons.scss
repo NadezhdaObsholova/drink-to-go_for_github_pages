@@ -59,9 +59,9 @@
 
 .radio-buttons__label:hover .radio-buttons__mark:hover,
 .radio-buttons__label:focus .radio-buttons__mark:focus {
- outline: solid 2px $base-purple-lighter;
- border: solid 2px #fff;
- background-color: rgb(221, 213, 243);
+  outline: solid 2px $base-purple-lighter;
+  border: solid 2px $base-white;
+  background-color: rgb(221, 213, 243);
 }
 
 .radio-buttons__input:disabled + .radio-buttons__mark::after {

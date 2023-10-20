@@ -4,21 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="vendor/nouislider/nouislider.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/favicon-32x32.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="/source/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/source/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2">
   <title>Drink2Go</title>
 </head>
 
 <body class="page__body">
   <header class="header" data-test="header">
     <div class="header__content-holder">
-      <a class="header__logo logo link" href="#"></a>
-      <div class="logo__desktop-title">Интернет-магазин кофейных напитков</div>
+      <a class="header__logo logo link" href="#" aria-label="логотип магазина"></a>
+      <div class="header__logo-title">Интернет-магазин кофейных напитков</div>
       <nav class="header__nav nav-header">
         <ul class="nav-header__list list">
           <li class="nav-header__item nav-header__item--current">главная</li>
@@ -30,16 +28,16 @@
       <div class="header__account account-menu">
         <ul class="account-menu-list list">
           <li class="account-menu-item">
-            <img width="16" height="16" class="account-menu__icon img" src="images/user.svg" alt="">
+            <img  class="account-menu__icon img" width="16" height="16" src="images/user.svg" alt="">
             <p class="account-menu__text">войти</p>
           </li>
           <li class="account-menu-item">
-            <img width="16" height="16" class="account-menu__icon img" src="images/basket.svg" alt="">
+            <img class="account-menu__icon img" width="16" height="16" src="images/basket.svg" alt="">
             <p class="account-menu__text">корзина</p>
           </li>
         </ul>
       </div>
-      <button class="header__menu-button js-toggle-button" aria-label="кнопка открытия меню"></button>
+      <button class="header__menu-button js-toggle-button" type="button" aria-label="кнопка открытия меню"></button>
     </div>
   </header>
 
@@ -48,15 +46,15 @@
     <section class="main__hiro" data-test="hero">
       <h2 class="visually-hidden">новинки</h2>
       <div class="main__slider slider">
-        <button class="slider__button-prev slider-button-prev button" aria-label="показать предыдущий слайд">
+        <button class="slider__button-prev slider-button-prev button" type="button" aria-label="показать предыдущий слайд">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="slider__button--path" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="slider__button-path" fill-rule="evenodd" clip-rule="evenodd"
               d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="none" />
           </svg>
         </button>
-        <button class="slider__button-next slider-button-next button" aria-label="показать следующий слайд">
+        <button class="slider__button-next slider-button-next button" type="button" aria-label="показать следующий слайд">
           <svg width="11" height="20" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path class="slider__button--path" fill-rule="evenodd" clip-rule="evenodd"
+            <path class="slider__button-path" fill-rule="evenodd" clip-rule="evenodd"
               d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="none" />
           </svg>
         </button>
@@ -72,11 +70,9 @@
                 <div class="slider__img">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="images/flat_white_desktop.webp, images/flat_white_desktop@2x.webp 2x" width="600"
-                      hieght="600">
+                      srcset="images/flat_white_desktop.webp, images/flat_white_desktop@2x.webp 2x" width="600" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="images/flat_white_tablet.webp, images/flat_white_tablet@2x.webp 2x" width="476"
-                      hieght="476">
+                      srcset="images/flat_white_tablet.webp, images/flat_white_tablet@2x.webp 2x" width="476"  type="image/webp">
                     <img class="img" width="280" height="280"
                       srcset="images/flat_white_mobile.webp, images/flat_white_mobile@2x.webp 2x"
                       src="images/flat_white_mobile.png" alt="банка кофе Декаф Флэт Уайт">
@@ -94,21 +90,20 @@
                       <div class="slider__old-price">295 &#8381;</div>
                       <div class="slider__current-price">225 &#8381;</div>
                     </div>
-                    <button class="slider__order-button button">Заказать</button>
+                    <button class="slider__order-button button" type="button">Заказать</button>
                   </div>
                 </div>
 
               </div>
             </li>
-            <li class="slider__item slider__item--second visually-hidden">
+            <li class="slider__item slider__item--second">
               <div class="slider__content-holder">
                 <div class="slider__img">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="images/lavender_desktop.webp, images/lavender_desktop@2x.webp 2x" width="600"
-                      hieght="600">
+                      srcset="images/lavender_desktop.webp, images/lavender_desktop@2x.webp 2x" width="600" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="images/lavender_tablet.webp, images/lavender_tablet@2x.webp 2x" width="476" hieght="476">
+                      srcset="images/lavender_tablet.webp, images/lavender_tablet@2x.webp 2x" width="476" type="image/webp">
                     <img class="img" width="280" height="280"
                       srcset="images/lavender_mobile.webp, images/lavender_mobile@2x.webp 2x"
                       src="images/lavender_mobile.png" alt="банка лавандового латте">
@@ -120,42 +115,43 @@
                   <div class="slider__description-text">Невероятное сочетание перуанской высокогорной арабики с молоком
                     ламы
                     и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</div>
-                </div>
-                <div class="slider__order">
-                  <div class="slider__price">
-                    <div class="slider__old-price">285 &#8381;</div>
-                    <div class="slider__current-price">265 &#8381;</div>
+                  <div class="slider__order">
+                    <div class="slider__price">
+                      <div class="slider__old-price">285 &#8381;</div>
+                      <div class="slider__current-price">265 &#8381;</div>
+                    </div>
+                    <button class="slider__order-button button" type="button">Заказать</button>
                   </div>
-                  <button class="slider__order-button button">Заказать</button>
                 </div>
               </div>
             </li>
-            <li class="slider__item slider__item--third visually-hidden">
+            <li class="slider__item slider__item--third">
               <div class="slider__content-holder">
                 <div class="slider__img">
                   <picture>
                     <source media="(min-width: 1440px)"
-                      srcset="images/espresso_desktop.webp, images/espresso_desktop@2x.webp 2x" width="600"
-                      hieght="600">
+                      srcset="images/espresso_desktop.webp, images/espresso_desktop@2x.webp 2x" width="600" type="image/webp">
                     <source media="(min-width: 768px)"
-                      srcset="images/espresso_tablet.webp, images/espresso_tablet@2x.webp 2x" width="476" hieght="476">
+                      srcset="images/espresso_tablet.webp, images/espresso_tablet@2x.webp 2x" width="476" type="image/webp">
                     <img class="img" width="280" height="280"
                       srcset="images/espresso_mobile.webp, images/espresso_mobile@2x.webp 2x"
                       src="images/espresso_mobile.png" alt="банка тройного эспрессо">
                   </picture>
                 </div>
+
+
                 <div class="slider__description">
                   <div class="slider__description-notice">новинка!</div>
                   <div class="slider__description-title">Тройной Эспрессо</div>
                   <div class="slider__description-text">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной
                     эспрессо из Колумбии покажет вам, что такое настоящая бодрость</div>
-                </div>
-                <div class="slider__order">
-                  <div class="slider__price">
-                    <div class="slider__old-price">395 &#8381;</div>
-                    <div class="slider__current-price">375 &#8381;</div>
+                  <div class="slider__order">
+                    <div class="slider__price">
+                      <div class="slider__old-price">395 &#8381;</div>
+                      <div class="slider__current-price">375 &#8381;</div>
+                    </div>
+                    <button class="slider__order-button button" type="button">Заказать</button>
                   </div>
-                  <button class="slider__order-button button">Заказать</button>
                 </div>
               </div>
             </li>
@@ -171,7 +167,7 @@
         <ul class="features__list list">
           <li class="features__item feature">
             <div class="feature__icon">
-              <img width="50" height="56" class="img" src="images/icons/stack.svg#clock-icon" alt="">
+              <img class="img" width="50" height="56" src="images/icons/stack.svg#clock-icon" alt="">
             </div>
             <div class="feature__description">
               <div class="feature__title">Скорость</div>
@@ -180,7 +176,7 @@
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
-              <img width="52" height="56" class="img" src="images/icons/stack.svg#pocket-icon" alt="">
+              <img class="img" width="52" height="56" src="images/icons/stack.svg#pocket-icon" alt="">
             </div>
             <div class="feature__description">
               <div class="feature__title">Удобство</div>
@@ -189,7 +185,7 @@
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
-              <img width="42" height="56" class="img" src="images/icons/stack.svg#flash-icon" alt="">
+              <img class="img" width="42" height="56" src="images/icons/stack.svg#flash-icon" alt="">
             </div>
             <div class="feature__description">
               <div class="feature__title">Бодрость</div>
@@ -198,7 +194,7 @@
           </li>
           <li class="features__item feature">
             <div class="feature__icon">
-              <img width="46" height="56" class="img" src="images/icons/stack.svg#leaf-icon" alt="">
+              <img class="img" width="46" height="56" src="images/icons/stack.svg#leaf-icon" alt="">
             </div>
             <div class="feature__description">
               <div class="feature__title">Экологичность</div>
@@ -219,9 +215,13 @@
             <legend class="price-slider__legend">Цена</legend>
             <div class="price-slider__holder" id="slider"></div>
             <div class="price-slider__field">
-              <input class="price-slider__value-min" type="text">
+              <label class="price-slider__value-min-text visually-hidden">
+              <input class="price-slider__value-min" type="text" name="min-price">
+              </label>
               <div class="price-slider__separaitor"></div>
-              <input class="price-slider__value-max" type="text">
+              <label class="price-slider__value-max-text visually-hidden">
+              <input class="price-slider__value-max" type="text" name="max-price">
+              </label>
             </div>
 
           </fieldset>
@@ -268,35 +268,35 @@
             <ul class="checkboxes__list list">
               <li class="checkboxes__item">
                 <label class="checkboxes__label">
-                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Brazil" id="Brazil" checked>
+                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Brazil" id="brazil" checked>
                   <span class="checkboxes__mark"></span>
                   <span class="checkboxes__title">Бразилия</span>
                 </label>
               </li>
               <li class="checkboxes__item">
                 <label class="checkboxes__label">
-                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Ethiopia" id="Ethiopia">
+                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Ethiopia" id="ethiopia">
                   <span class="checkboxes__mark"></span>
                   <span class="checkboxes__title">Эфиопия</span>
                 </label>
               </li>
               <li class="checkboxes__item">
                 <label class="checkboxes__label">
-                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Colombia" id="Colombia">
+                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Colombia" id="colombia">
                   <span class="checkboxes__mark"></span>
                   <span class="checkboxes__title">Колумбия</span>
                 </label>
               </li>
               <li class="checkboxes__item">
                 <label class="checkboxes__label">
-                  <input class="checkboxes__input visually-hidden" type="checkbox" name="CostaRica" id="CostaRica">
+                  <input class="checkboxes__input visually-hidden" type="checkbox" name="CostaRica" id="costa-rica">
                   <span class="checkboxes__mark"></span>
                   <span class="checkboxes__title">Коста-Рика</span>
                 </label>
               </li>
               <li class="checkboxes__item">
                 <label class="checkboxes__label">
-                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Peru" id="Peru" disabled>
+                  <input class="checkboxes__input visually-hidden" type="checkbox" name="Peru" id="peru" disabled>
                   <span class="checkboxes__mark"></span>
                   <span class="checkboxes__title">Перу</span>
                 </label>
@@ -312,7 +312,7 @@
         <div class="catalog__products">
           <div class="catalog__select select">
             <div class="select__title">Сортировка:</div>
-            <select class="select__list">
+            <select class="select__list" name="sort">
               <option class="select__item">по умолчанию</option>
               <option class="select__item">по цене</option>
             </select>
@@ -332,8 +332,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -352,8 +352,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -372,8 +372,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -392,8 +392,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -412,8 +412,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -432,8 +432,8 @@
               </div>
               <div class="product__buy">
                 <div class="product__price">225 &#8381;</div>
-                <button class="product__button button">
-                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button">
+                <button class="product__button button" type="button">
+                  <img class="img" width="20" height="16" src="images/icons/stack.svg#basket-in-button" alt="">
                   В корзину
                 </button>
               </div>
@@ -442,7 +442,7 @@
         </div>
 
         <div class="catalog__pagination pagination">
-          <button class="pagination__button pagination__button--previous button">
+          <button class="pagination__button pagination__button--previous button" type="button">
             <svg width="6" height="10" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z" fill="#7859CF" />
@@ -452,7 +452,7 @@
           <div class="pagination__page">1</div>
           <div class="pagination__page pagination__page--current">2</div>
           <div class="pagination__page">3</div>
-          <button class="pagination__button pagination__button--next button">
+          <button class="pagination__button pagination__button--next button" type="button">
             <svg width="6" height="10" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z" fill="#7859CF" />
@@ -466,9 +466,10 @@
       <h2 class="visually-hidden">Расположение магазина на карте</h2>
       <div class="map__holder">
         <picture>
-          <source media="(min-width: 768px)" srcset="images/map_desktop.webp, images/map_map_desktop@2x.webp 2x">
-          <img class="map-img" srcset="images/map_tablet.webp, images/map_tablet@2x.webp 2x" src="images/map_tablet.png"
-            alt="карта местности">
+          <source media="(min-width: 1440px)" srcset="images/map_desktop.webp, images/map_map_desktop@2x.webp 2x" type="image/webp">
+          <source media="(min-width: 768px)" srcset="images/map_tablet.webp, images/map_map_tablet@2x.webp 2x" type="image/webp">
+          <img class="map__img img" srcset="images/map_mobile.webp, images/map_mobile@2x.webp 2x" height="480" width="320"
+            src="images/map_mobile.png" alt="карта местности">
         </picture>
       </div>
     </section>
@@ -476,12 +477,12 @@
   <footer class="footer" data-test="footer">
     <div class="footer__content-holder">
       <div class="footer__sotial-links">
-        <a class="footer__logo link"></a>
+        <a class="footer__logo link" href="#" aria-label="логотип магазина"></a>
         <div class="footer__logo-desktop-title">Интернет-магазин кофейных напитков</div>
         <div class="footer__sotial sotial">
           <ul class="sotial__list list">
             <li class="sotial__item">
-              <a class="link sotial__link" href="https://vk.com">
+              <a class="link sotial__link" href="https://vk.com" aria-label="страница магазина во вконтакте">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="sotial__icon" fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.40589 1.40589C0 2.81177 0 5.0745 0 9.6V10.4C0 14.9255 0 17.1882 1.40589 18.5941C2.81177 20 5.0745 20 9.6 20H10.4C14.9255 20 17.1882 20 18.5941 18.5941C20 17.1882 20 14.9255 20 10.4V9.6C20 5.0745 20 2.81177 18.5941 1.40589C17.1882 0 14.9255 0 10.4 0H9.6C5.0745 0 2.81177 0 1.40589 1.40589ZM3.37505 6.08337C3.48338 11.2834 6.08337 14.4084 10.6417 14.4084H10.9001V11.4334C12.5751 11.6 13.8417 12.825 14.35 14.4084H16.7167C16.0667 12.0417 14.3583 10.7334 13.2916 10.2334C14.3583 9.61671 15.8583 8.11671 16.2166 6.08337H14.0666C13.5999 7.73337 12.2168 9.23337 10.9001 9.37504V6.08337H8.75V11.85C7.41667 11.5167 5.73338 9.90004 5.65837 6.08337H3.37505Z"
@@ -490,7 +491,7 @@
               </a>
             </li>
             <li class="sotial__item">
-              <a class="link sotial__link" href="https://ru.pinterest.com/">
+              <a class="link sotial__link" href="https://ru.pinterest.com/" aria-label="страница магазина в pinterest">
                 <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="sotial__icon"
                     d="M11 8.96454e-05C4.92488 8.96454e-05 0 4.92497 0 11C0 15.6602 2.8994 19.644 6.99129 21.2467C6.89517 20.3764 6.80825 19.0379 7.02943 18.0878C7.22934 17.2293 8.31931 12.6201 8.31931 12.6201C8.31931 12.6201 7.99028 11.9612 7.99028 10.987C7.99028 9.45743 8.87682 8.31552 9.98068 8.31552C10.9192 8.31552 11.3724 9.0201 11.3724 9.86499C11.3724 10.8088 10.7716 12.2199 10.4615 13.5275C10.2023 14.6223 11.0105 15.5152 12.0904 15.5152C14.0454 15.5152 15.5483 13.4537 15.5483 10.4781C15.5483 7.84429 13.6558 6.00285 10.9535 6.00285C7.82365 6.00285 5.98653 8.35042 5.98653 10.7765C5.98653 11.7219 6.35073 12.7357 6.80518 13.2868C6.89508 13.3958 6.90824 13.4912 6.88146 13.6023C6.79797 13.9498 6.6124 14.6969 6.57597 14.8498C6.528 15.0512 6.41655 15.0939 6.20808 14.9969C4.83426 14.3574 3.9753 12.3488 3.9753 10.7355C3.9753 7.26559 6.49644 4.07891 11.2434 4.07891C15.0593 4.07891 18.0247 6.79806 18.0247 10.432C18.0247 14.223 15.6344 17.2739 12.3167 17.2739C11.202 17.2739 10.1542 16.6949 9.79547 16.0109C9.79547 16.0109 9.2439 18.1111 9.11018 18.6258C8.86186 19.5812 8.19145 20.7788 7.74303 21.5095C8.77223 21.8281 9.86598 22 11 22C17.0751 22 22 17.0751 22 11C22 4.92497 17.0751 8.96454e-05 11 8.96454e-05Z"
@@ -499,7 +500,7 @@
               </a>
             </li>
             <li class="sotial__item">
-              <a class="link sotial__link" href="https://ok.ru/">
+              <a class="link sotial__link" href="https://ok.ru/" aria-label="страница магазина в одноклассниках">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path class="sotial__icon" fill-rule="evenodd" clip-rule="evenodd"
                     d="M1.4 1.4C3.33786e-06 2.812 3.35195e-06 5.074 3.35195e-06 9.6V10.4L1.66545e-06 10.5136C-9.77702e-05 14.97 -0.00014782 17.2117 1.4 18.6C2.812 20 5.074 20 9.6 20H10.4H10.5131C14.9698 20.0001 17.2117 20.0001 18.6 18.6C20 17.188 20 14.926 20 10.4V9.6V9.48685C20.0001 5.03015 20.0001 2.7883 18.6 1.4C17.188 3.33786e-06 14.926 3.35195e-06 10.4 3.35195e-06H9.6L9.48639 1.66545e-06C5.03 -9.77702e-05 2.78825 -0.00014782 1.4 1.4ZM10.0194 10.1972C11.6876 10.1972 13.0477 8.83717 13.0477 7.16889C13.0477 5.50061 11.6876 4.14061 10.0194 4.14061C8.33296 4.14061 6.97295 5.50061 6.97295 7.16889C6.97295 8.83717 8.33296 10.1972 10.0194 10.1972ZM10.0194 5.91768C10.7084 5.91768 11.2706 6.47982 11.2706 7.16889C11.2706 7.85796 10.7084 8.4201 10.0194 8.4201C9.3303 8.4201 8.76816 7.85796 8.76816 7.16889C8.75003 6.47982 9.31216 5.91768 10.0194 5.91768ZM11.2343 12.6815C11.8509 12.5364 12.4493 12.3007 12.9933 11.9561C13.4103 11.7023 13.5372 11.1401 13.2653 10.7231C13.0114 10.306 12.4493 10.1791 12.0322 10.4511C10.7991 11.2308 9.18524 11.2308 7.95216 10.4511C7.53509 10.1972 6.99109 10.306 6.71909 10.7231C6.48336 11.1401 6.61029 11.6841 7.02736 11.938C7.57137 12.2825 8.16977 12.5183 8.7863 12.6634L7.0999 14.3498C6.75536 14.6943 6.75536 15.2565 7.0999 15.601C7.28123 15.7823 7.49883 15.8548 7.73456 15.8548C7.9703 15.8548 8.1879 15.7641 8.36923 15.601L10.0375 13.9327L11.7058 15.601C12.0503 15.9455 12.6124 15.9455 12.957 15.601C13.3015 15.2565 13.3015 14.6943 12.957 14.3498L11.2343 12.6815Z"
@@ -550,7 +551,7 @@
     </div>
   </footer>
 
-  <script src="vendor/nouislider/nouislider.js"></script>
+  <script src="vendor/nouislider/nouislider.js" defer></script>
   <script src="js/script.js"></script>
 
 </body>

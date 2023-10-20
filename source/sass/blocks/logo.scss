@@ -3,8 +3,10 @@
   position: relative;
   width: 32px;
   height: 36px;
+
   @media (min-width: $tablet-width) {
     width: 82px;
+
     @media (min-width: $desktop-width) {
       width: 170px;
     }
@@ -18,25 +20,16 @@
   width: 32px;
   height: 36px;
   background-image: url("../../images/icons/stack.svg#logo-mobile");
+
   @media (min-width: $tablet-width) {
     width: 82px;
     height: 36px;
     background-image: url("../../images/icons/stack.svg#logo-tablet");
+
     @media (min-width: $desktop-width) {
       width: 170px;
       height: 36px;
       background-image: url("../../images/icons/stack.svg#logo-desktop");
     }
-  }
-}
-
-.logo__desktop-title {
-  display: none;
-  @media (min-width: $desktop-width) {
-    display: block;
-    font-weight: 400;
-    text-transform: none;
-    width: 126px;
-    text-align: left;
   }
 }

@@ -78,7 +78,6 @@
 
 .checkboxes__label:hover .checkboxes__mark:hover,
 .checkboxes__label:focus .checkboxes__mark:focus {
- outline: solid 2px $base-purple-lighter;
- background-color: rgb(221, 213, 243);
+  outline: solid 2px $base-purple-lighter;
+  background-color: rgb(221, 213, 243);
 }
-

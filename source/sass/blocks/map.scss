@@ -1,15 +1,5 @@
-.map__holder {
-  position: absolute;
-  right: calc(50% - 384px);
-  display: block;
-  justify-content: center;
-  @media (min-width: $tablet-width) {
-    right: calc(50% - 720px);
-    top: -30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    right: calc(50% - 720px);
-    top: 0;
-  }
+.map__img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }

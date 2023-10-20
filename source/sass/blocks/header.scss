@@ -26,6 +26,7 @@
     width: 708px;
     height: 80px;
   }
+
   @media (min-width: $desktop-width) {
     width: 1360px;
     height: 80px;
@@ -33,8 +34,22 @@
   }
 }
 
+
+.header__logo-title {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    font-weight: 400;
+    text-transform: none;
+    width: 126px;
+    text-align: left;
+  }
+}
+
 .header__account {
   flex-grow: 1;
+
   @media (min-width: $tablet-width) {
     flex-grow: 0;
   }
@@ -42,33 +57,28 @@
 
 .header__menu-button {
   cursor: pointer;
-  padding: 0;
-  background-color: transparent;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-
-}
-
-.header__menu-button--close {
-  margin-right: 2px;
-  margin-left: 2px;
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.header__menu-button {
   position: relative;
   display: block;
   align-items: center;
   padding: 0;
   width: 16px;
   height: 12px;
-  background-color: transparent;
   border: none;
-  cursor: pointer;
   top: -2px;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.header__menu-button--close {
+  margin-right: 2px;
+  margin-left: 2px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .header__menu-button::after {
@@ -78,13 +88,14 @@
   width: 16px;
   height: 12px;
   top: calc(-50% + 8px);
-  background-image: url('../../images/icons/stack.svg#mobile-menu-button-close');
+  background-image: url("../../images/icons/stack.svg#mobile-menu-button-close");
 }
 
 .js-toggle-button {
   height: 16px;
   margin-right: 0;
   margin-left: 0;
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -96,5 +107,5 @@
   display: block;
   height: 16px;
   top: calc(-50% + 8px);
-  background-image: url('../../images/icons/stack.svg#mobile-menu-button-open');
+  background-image: url("../../images/icons/stack.svg#mobile-menu-button-open");
 }
