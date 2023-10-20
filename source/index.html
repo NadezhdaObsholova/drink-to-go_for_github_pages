@@ -96,7 +96,7 @@
 
               </div>
             </li>
-            <li class="slider__item slider__item--second">
+            <li class="slider__item slider__item--second visually-hidden">
               <div class="slider__content-holder">
                 <div class="slider__img">
                   <picture>
@@ -125,7 +125,7 @@
                 </div>
               </div>
             </li>
-            <li class="slider__item slider__item--third">
+            <li class="slider__item slider__item--third visually-hidden">
               <div class="slider__content-holder">
                 <div class="slider__img">
                   <picture>
@@ -215,13 +215,13 @@
             <legend class="price-slider__legend">Цена</legend>
             <div class="price-slider__holder" id="slider"></div>
             <div class="price-slider__field">
-              <label class="price-slider__value-min-text visually-hidden">
-              <input class="price-slider__value-min" type="text" name="min-price">
-              </label>
+              <label class="price-slider__value-min-text visually-hidden" for="min-price"></label>
+              <input class="price-slider__value-min" type="text" name="min-price" id="min-price">
+
               <div class="price-slider__separaitor"></div>
-              <label class="price-slider__value-max-text visually-hidden">
-              <input class="price-slider__value-max" type="text" name="max-price">
-              </label>
+              <label class="price-slider__value-max-text visually-hidden" for="max-price"></label>
+              <input class="price-slider__value-max" type="text" name="max-price" id="max-price">
+
             </div>
 
           </fieldset>
@@ -551,8 +551,8 @@
     </div>
   </footer>
 
-  <script src="vendor/nouislider/nouislider.js" defer></script>
-  <script src="js/script.js"></script>
+  <script src="vendor/nouislider/nouislider.js"></script>
+  <script src="js/script.js" defer></script>
 
 </body>
 
