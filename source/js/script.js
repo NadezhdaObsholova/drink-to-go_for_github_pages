@@ -1,4 +1,4 @@
-//price-slider
+//PRICE-SLIDER
 const sliderElement = document.querySelector('.price-slider__holder');
 const minValueElement = document.querySelector('.price-slider__value-min');
 const maxValueElement = document.querySelector('.price-slider__value-max');
@@ -22,10 +22,9 @@ sliderElement.noUiSlider.on('update', () => {
   maxValueElement.value = Math.round(sliderElement.noUiSlider.get().slice(1));
 });
 
-//burger-menu
+//BURGER-MENU
 const menuButtonElement = document.querySelector('.header__menu-button');
 const headerNavElement = document.querySelector('.nav-header');
-
 
 const onClickMenuButtonElement = () => {
   headerNavElement.classList.toggle('nav-header--js');
@@ -34,24 +33,21 @@ const onClickMenuButtonElement = () => {
 
 menuButtonElement.addEventListener('click', onClickMenuButtonElement);
 
-
-
-
-//slider
-
-
-// слайдер
-
+//SLIDER
 const slides = Array.from(document.querySelectorAll('.slider__item'));
-const prevButton = document.querySelector('.slider__button-prev');
-const nextButton = document.querySelector('.slider__button-next');
+const buttonPrev = document.querySelector('.slider__button-prev');
+const buttonNext = document.querySelector('.slider__button-next');
 const paginationMark = Array.from(document.querySelectorAll('.slider__padination-item'));//путь внутри кнопки
 
 let currentSlideIndex = 0;
 
-// Функция, которая скрывает все слайды и показывает только текущий слайд.
+//отключение кнопки "назад"
+if (currentSlideIndex === 0) {
+  buttonPrev.setAttribute('disabled', true);
+}
 
-const showSlide = (index) => {
+//смена отображаемого слайда
+const shiftSlide = (index) => {
   slides.forEach((slide, i) => {
     if (i === index) {
       slide.classList.remove('visually-hidden');
@@ -61,8 +57,7 @@ const showSlide = (index) => {
   });
 };
 
-//пагинация
-
+//отметка на текущей пагинации
 const paginationMarkCurrent = () => {
   paginationMark.forEach((item, i) => {
     if (i === currentSlideIndex) {
@@ -73,63 +68,29 @@ const paginationMarkCurrent = () => {
   });
 };
 
-
-// Показать первый слайд при загрузке страницы.
-showSlide(currentSlideIndex);
-// Показать первую пагинацию при загрузке страницы.
-paginationMarkCurrent();
-//
-if (currentSlideIndex === 0) {
-  prevButton.setAttribute('disabled', true);
-}
-
-// Обработчик для кнопки "Следующий слайд".
-nextButton.addEventListener('click', () => {
+// обработчик переключения слайдов вперед
+buttonNext.addEventListener('click', () => {
   if (currentSlideIndex < slides.length - 1) {
     currentSlideIndex = currentSlideIndex + 1;
-    showSlide(currentSlideIndex);
+    shiftSlide(currentSlideIndex);
     paginationMarkCurrent();
   }
   if (currentSlideIndex === slides.length - 1) {
-    nextButton.setAttribute('disabled', true);
+    buttonNext.setAttribute('disabled', true);
   }
-
-  prevButton.removeAttribute('disabled');
-
+  buttonPrev.removeAttribute('disabled');
 });
 
-// Обработчик для кнопки "Предыдущий слайд".
-prevButton.addEventListener('click', () => {
+// обработчик переключения слайдов назад
+buttonPrev.addEventListener('click', () => {
   if (currentSlideIndex > 0) {
     currentSlideIndex = currentSlideIndex - 1;
-    showSlide(currentSlideIndex);
+    shiftSlide(currentSlideIndex);
     paginationMarkCurrent();
   }
   if (currentSlideIndex === 0) {
-    prevButton.setAttribute('disabled', true);
+    buttonPrev.setAttribute('disabled', true);
   }
 
-  nextButton.removeAttribute('disabled');
+  buttonNext.removeAttribute('disabled');
 });
-
-// Обработчик для пагинации.
-sliderPagination.forEach((paginationButton, i) => {
-  paginationButton.addEventListener('click', () => {
-    currentSlideIndex = i;
-    showSlide(currentSlideIndex);
-    paginationMarkCurrent();
-
-    if (currentSlideIndex === 0) {
-      prevButton.setAttribute('disabled', true);
-    } else {
-      prevButton.removeAttribute('disabled');
-    }
-
-    if (currentSlideIndex === slides.length - 1) {
-      nextButton.setAttribute('disabled', true);
-    } else {
-      nextButton.removeAttribute('disabled');
-    }
-  });
-});
-

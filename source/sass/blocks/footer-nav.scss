@@ -2,6 +2,7 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  padding-top: 5px;
   color: $base-purple-primary;
 }
 
@@ -54,5 +55,13 @@
 }
 
 .footer-nav__list {
+  padding-bottom: 28px;
+  
+  @media (min-width: $tablet-width) {
+    padding-bottom: 22px;
+  }
+}
+
+.footer-nav:last-child .footer-nav__list {
   padding-bottom: 20px;
 }

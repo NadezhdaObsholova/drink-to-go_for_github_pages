@@ -3,7 +3,7 @@
   margin: auto;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 728px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,13 +18,15 @@
 .footer__sotial-links {
   display: flex;
   padding-top: 20px;
-  padding-bottom: 22px;
+  padding-bottom: 20px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid $base-purple-secondary;
 
   @media (min-width: $tablet-width) {
     border: none;
+    padding-top: 38px;
+    padding-bottom: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -57,7 +59,7 @@
   font-size: 12px;
   line-height: 16px;
   color: $base-grey;
-  padding-top: 20px;
+  padding-top: 6px;
   padding-bottom: 30px;
 
   @media (min-width: $desktop-width) {
@@ -84,7 +86,7 @@
   height: 36px;
   background-image: url("../../images/icons/stack.svg#logo-tablet");
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     width: 170px;
     height: 36px;
     background-image: url("../../images/icons/stack.svg#logo-desktop");

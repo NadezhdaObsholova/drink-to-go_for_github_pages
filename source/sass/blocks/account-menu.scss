@@ -2,6 +2,9 @@
   display: flex;
   gap: 44px;
   justify-content: end;
+  @media (min-width: $tablet-width) {
+    gap: 5px;
+  }
 }
 
 .account-menu__text {
@@ -13,9 +16,17 @@
 }
 
 .account-menu-item {
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 8px;
     align-items: center;
+  }
+}
+
+.account-menu__icon {
+
+  @media (min-width: $tablet-width) {
+    padding: 20px;
   }
 }

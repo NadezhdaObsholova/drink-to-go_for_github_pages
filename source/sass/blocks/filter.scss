@@ -35,6 +35,9 @@
 .filter__button--reset {
   background-color: $base-white;
   color: $base-purple-primary;
+  @media (min-width: $tablet-width) {
+    width: 120px;
+  }
 }
 
 .filter__price-slider {

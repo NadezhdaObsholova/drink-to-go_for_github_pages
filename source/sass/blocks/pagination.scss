@@ -5,6 +5,10 @@
   line-height: 24px;
   color: $base-purple-primary;
   width: 280px;
+  @media (min-width: $tablet-width) {
+    width: auto;
+    justify-content: flex-end;
+  }
 }
 
 .pagination__button {
@@ -17,6 +21,28 @@
   background-color: $base-white;
 }
 
+.pagination__button-text {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.pagination__button--next,
+.pagination__button--previous {
+  @media (min-width: $tablet-width) {
+    width: max-content;
+  }
+}
+
+.pagination__button-arrow {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
 .pagination__page {
   display: flex;
   align-items: center;
