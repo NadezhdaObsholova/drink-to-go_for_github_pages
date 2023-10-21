@@ -1,7 +1,8 @@
 .account-menu-list {
   display: flex;
-  gap: 44px;
+  column-gap: 44px;
   justify-content: end;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     gap: 5px;

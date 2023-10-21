@@ -1,4 +1,6 @@
 .header {
+  display: flex;
+  align-items: center;
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
@@ -7,6 +9,7 @@
   text-align: center;
   background-color: $base-white;
   padding: 0;
+  min-height: 60px;
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
@@ -19,18 +22,15 @@
   align-items: center;
   justify-content: space-between;
   width: 280px;
-  height: 60px;
   margin: auto;
 
   @media (min-width: $tablet-width) {
     width: 728px;
-    height: 80px;
     gap: 20px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1360px;
-    height: 80px;
     gap: 20px;
   }
 }
@@ -43,7 +43,7 @@
     display: block;
     font-weight: 400;
     text-transform: none;
-    width: 126px;
+    width: 140px;
     text-align: left;
   }
 }
