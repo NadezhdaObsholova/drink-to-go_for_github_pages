@@ -109,11 +109,11 @@
 }
 
 .noUi-handle-lower {
-  right: -23px;
+  right: -12px;
 }
 
 .noUi-handle-upper {
-  right: 0;
+  right: -12px;
 }
 
 .noUi-vertical {
@@ -158,31 +158,31 @@
 .noUi-handle:focus {
   outline: solid 2px #9070ec;
   border: solid 2px #ffffff;
-  width: 20px;
-  height: 20px;
-  top: -7px;
+  width: 22px;
+  height: 22px;
+  top: -8px;
   background-color: rgb(221, 213, 243);
 }
 
 .noUi-handle:active {
   outline: solid 2px #9070ec;
   border: solid 2px #ffffff;
-  width: 20px;
-  height: 20px;
-  top: -7px;
+  width: 22px;
+  height: 22px;
+  top: -8px;
   background-color: #9070ec;
 }
 
 .noUi-handle-lower:active,
 .noUi-handle-lower:hover,
 .noUi-handle-lower:focus {
-  right: -20px;
+  right: -10px;
 }
 
 .noUi-handle-upper:active,
 .noUi-handle-upper:hover,
 .noUi-handle-upper:focus {
-  right: 1px;
+  right: -10px;
 }
 
 /* Disabled state;*/

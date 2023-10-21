@@ -13,7 +13,7 @@ noUiSlider.create(sliderElement, {
   step: 1,
   range: {
     'min': [0],
-    'max': [970]
+    'max': [1000]
   }
 });
 
