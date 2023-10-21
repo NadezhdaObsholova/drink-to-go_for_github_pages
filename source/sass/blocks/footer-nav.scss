@@ -47,10 +47,19 @@
 }
 
 .footer-nav {
-  border-bottom: 1px solid $base-purple-secondary;
+  position: relative;
+}
 
-  @media (min-width: $tablet-width) {
-    border: none;
+@media (max-width: $mobil-width-only) {
+  .footer__nav::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vh;
+    right: -50%;
+    height: 1px;
+    background-color: $base-purple-secondary;
+    bottom: 0;
   }
 }
 

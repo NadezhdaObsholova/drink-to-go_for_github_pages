@@ -16,15 +16,14 @@
 }
 
 .footer__sotial-links {
+  position: relative;
   display: flex;
   padding-top: 20px;
   padding-bottom: 20px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid $base-purple-secondary;
 
   @media (min-width: $tablet-width) {
-    border: none;
     padding-top: 40px;
     padding-bottom: 12px;
   }
@@ -36,6 +35,19 @@
     gap: 10px;
     padding-top: 10px;
     padding-bottom: 0;
+  }
+}
+
+@media (max-width: $mobil-width-only) {
+  .footer__sotial-links::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100vh;
+    right: -50%;
+    height: 1px;
+    background-color: $base-purple-secondary;
+    bottom: 0;
   }
 }
 
