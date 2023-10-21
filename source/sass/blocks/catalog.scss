@@ -9,7 +9,8 @@
     width: 1360px;
     display: grid;
     grid-template-columns: 318px 1fr;
-    gap: 30px;
+    row-gap: 20px;
+    column-gap: 30px;
   }
 }
 
@@ -36,14 +37,14 @@
 
   @media (min-width: $desktop-width) {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
   }
 }
 
 .catalog__products {
   @media (min-width: $desktop-width) {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
   }
 }
 
@@ -56,8 +57,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 31px;
     padding-bottom: 73px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 40px;
   }
 }
 
@@ -65,8 +71,8 @@
   margin-left: auto;
 
   @media (min-width: $desktop-width) {
-    grid-column-start: 3;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
@@ -77,14 +83,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 223px 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 2;
     row-gap: 39px;
-    column-gap: 30px;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
-    width: 318px;
+    gap: 31px;
   }
 }

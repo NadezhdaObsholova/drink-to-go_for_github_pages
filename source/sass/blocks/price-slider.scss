@@ -7,12 +7,24 @@
 .price-slider__holder {
   margin-top: 30px;
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .price-slider__field {
   display: flex;
   gap: 18px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-between;
+  }
 }
 
 .price-slider__value-min,
@@ -32,6 +44,10 @@
 
   @media (min-width: $tablet-width) {
     width: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
   }
 }
 

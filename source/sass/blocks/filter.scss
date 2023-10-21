@@ -8,6 +8,10 @@
     flex-direction: row;
     justify-content: center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 8px;
+  }
 }
 
 .filter__button {
@@ -23,7 +27,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 149px;
+
+    flex-grow: 1;
   }
 }
 
@@ -35,8 +40,13 @@
 .filter__button--reset {
   background-color: $base-white;
   color: $base-purple-primary;
+
   @media (min-width: $tablet-width) {
     width: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 140px;
   }
 }
 

@@ -4,8 +4,10 @@
   align-items: center;
   background-color: $base-white;
   padding: 40px 20px 20px;
+
   @media (min-width: $tablet-width) {
     padding: 50px 30px 30px;
+    align-items: start;
   }
 }
 
@@ -21,8 +23,17 @@
     font-size: 24px;
     line-height: 36px;
     padding-top: 26px;
-    padding-bottom: 13px;
+    padding-bottom: 9px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 24px;
+    padding-bottom: 10px;
+  }
+}
+
+.product__img {
+  margin: auto;
 }
 
 .product__buy {
@@ -31,6 +42,10 @@
   padding-top: 16px;
   width: 100%;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 19px;
+  }
 }
 
 .product__button {

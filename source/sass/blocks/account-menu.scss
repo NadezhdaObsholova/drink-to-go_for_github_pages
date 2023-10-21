@@ -2,8 +2,14 @@
   display: flex;
   gap: 44px;
   justify-content: end;
+
   @media (min-width: $tablet-width) {
     gap: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 64px;
+    padding-right: 20px;
   }
 }
 
@@ -16,7 +22,6 @@
 }
 
 .account-menu-item {
-
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 8px;
@@ -25,8 +30,11 @@
 }
 
 .account-menu__icon {
-
   @media (min-width: $tablet-width) {
     padding: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }

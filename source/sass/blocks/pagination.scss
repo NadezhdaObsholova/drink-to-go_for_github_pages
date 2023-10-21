@@ -5,6 +5,7 @@
   line-height: 24px;
   color: $base-purple-primary;
   width: 280px;
+
   @media (min-width: $tablet-width) {
     width: auto;
     justify-content: flex-end;
@@ -43,6 +44,7 @@
     display: none;
   }
 }
+
 .pagination__page {
   display: flex;
   align-items: center;

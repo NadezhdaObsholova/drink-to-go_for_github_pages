@@ -14,6 +14,10 @@
     width: 80px;
     height: 73%;
   }
+
+  @media (min-width: $desktop-width) {
+    height: 100%;
+  }
 }
 
 .slider__button-next {
@@ -29,9 +33,15 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 0 60px 0;
+
   @media (min-width: $tablet-width) {
     padding-top: 55px;
     padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 79px;
   }
 }
 
@@ -45,9 +55,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1280px;
     flex-direction: row;
     gap: 30px;
+    width: 1230px;
+    padding: 0 104px;
   }
 }
 
@@ -59,6 +70,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 20px;
   }
+
   @media (min-width: $desktop-width) {
     flex-grow: 1;
     align-items: start;
@@ -81,6 +93,7 @@
   line-height: 48px;
   font-weight: 700;
   text-align: center;
+  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     font-size: 56px;
@@ -101,6 +114,8 @@
 
   @media (min-width: $desktop-width) {
     text-align: left;
+    padding-top: 20px;
+    padding-bottom: 37px;
   }
 }
 
@@ -109,6 +124,10 @@
   flex-direction: row;
   gap: 20px;
   align-items: center;
+
+  @media (min-width: $desktop-width) {
+    gap: 25px;
+  }
 }
 
 .slider__order-button {
@@ -124,6 +143,14 @@
 .slider__price {
   display: flex;
   gap: 6px;
+
+  @media (min-width: $desktop-width) {
+    letter-spacing: -1px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+  }
 }
 
 .slider__old-price {
@@ -157,7 +184,6 @@
       $flat-white 100%,
       $base-white 100%,
     );
-
   }
 }
 
@@ -215,7 +241,7 @@
     display: flex;
     gap: 8px;
     position: absolute;
-    top: calc(100% - 70px);
+    top: calc(100% - 74px);
     left: calc(50% - 101px);
   }
 }
@@ -232,26 +258,34 @@
 
 .slider__button-prev:hover {
   background:
-   linear-gradient(to right,
-   #ffffff 0%,
-   rgba(255, 255, 255, 0) 100%,
+    linear-gradient(to right,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%,
   );
 }
 
 .slider__button-next:hover {
   background:
-   linear-gradient(to left,
-   #ffffff 0%,
-   rgba(255, 255, 255, 0) 100%,
+    linear-gradient(to left,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 100%,
   );
 }
 
 .slider__button-prev:active {
-  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  background:
+    linear-gradient(to right,
+    rgba(120, 89, 207, 0.25) 0%,
+    transparent 100%,
+  );
 }
 
 .slider__button-next:active {
-  background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
+  background:
+    linear-gradient(to left,
+    rgba(120, 89, 207, 0.25) 0%,
+    transparent 100%,
+  );
 }
 
 .slider__order-button:hover,
